@@ -28,8 +28,13 @@ function App() {
 
 
     return (
-        <div>
-            <IndexPageComponentA/>
+        <div className='divideComponents'>
+            <div className='componentA'>            
+                <IndexPageComponentA/>
+            </div>
+            <div className='componentB'>
+                <IndexPageComponentA/>
+            </div>
         </div>
     );
     

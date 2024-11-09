@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import  IndexPageComponentA from'./IndexPageComponentA';
+import ComponentAfooter from './componentAfooter';
 
 function App() {
     const [forecasts, setForecasts] = useState();
 
     useEffect(() => {
-        //populateWeatherData();
-
         const handleMouseMove = (e) => {
             const gradient = `radial-gradient(circle ${500}px  at ${e.clientX}px ${e.clientY}px, #304c64, #132335)`;
             document.body.style.background = gradient;
@@ -31,6 +30,7 @@ function App() {
         <div className='divideComponents'>
             <div className='componentA'>            
                 <IndexPageComponentA/>
+                <ComponentAfooter/>
             </div>
             <div className='componentB'>
                 <IndexPageComponentA/>

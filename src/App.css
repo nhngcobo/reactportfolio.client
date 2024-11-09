@@ -32,10 +32,21 @@ body {
     margin-right: 10px;
     padding-left: 28vh;
     padding-top: 8vh;
+    width: 400px; 
+    word-wrap: break-word;
+    text-align: left;
+    
 }
 
 .componentB {
     flex: 1; 
+}
+
+.ComponentAfooter{
+    margin-top: 85%;
+    margin-left: 5%;
+    display: flex;
+    gap: 10px; 
 }
 
 body {
@@ -50,11 +61,11 @@ body {
 }
 
 h1 {
-    color: #213547;
+    color: whitesmoke;
 }
 
 p {
-    color: #213547;
+    color: wheat;
 }
 
 .table {

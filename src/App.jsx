@@ -33,7 +33,7 @@ function App() {
                 <ComponentAfooter/>
             </div>
             <div className='componentB'>
-                <IndexPageComponentA/>
+                <p>Hello shaddy</p>
             </div>
         </div>
     );

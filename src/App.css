@@ -42,6 +42,11 @@ body {
     flex: 1; 
 }
 
+.ComponentABody {
+    margin-top: 20%;
+    gap: 5px;
+}
+
 .ComponentAfooter{
     margin-top: 85%;
     margin-left: 5%;

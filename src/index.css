@@ -36,6 +36,35 @@ h2 {
   margin-right: 110px;
 }
 
+.inline-text {
+  display: inline;
+}
+
+.custom-list {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.custom-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-list li:hover {
+  background-color: #1c2f44; 
+  transform: translateX(10px); 
+  color: white; 
+}
+
+.typing-text {
+  color: green; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold; 
+  display: inline;
+  margin-left: 10px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

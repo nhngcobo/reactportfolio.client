@@ -58,11 +58,19 @@ h2 {
 }
 
 .typing-text {
-  color: green; 
-  font-family: 'Courier New', Courier, monospace; 
-  font-weight: bold; 
-  display: inline;
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   margin-left: 10px;
+  display: inline;
+  animation: blink 0.8s step-end infinite; /* Makes the underscore blink */
+}
+
+/* Blinking effect for the underscore */
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
 }
 
 button {

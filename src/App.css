@@ -38,6 +38,21 @@ body {
     
 }
 
+.ComponentAboutUser {
+    margin-left: 30%;
+    padding-top: 16vh;
+    width: 50%; 
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.ComponentExperience {
+    margin-left: 30%;
+    width: 50%; 
+    word-wrap: break-word;
+    text-align: left;    
+}
+
 .componentB {
     flex: 1; 
 }

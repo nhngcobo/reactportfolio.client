@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import  IndexPageComponentA from'./IndexPageComponentA';
 import ComponentAfooter from './componentAfooter';
+import ComponentAboutUser from './componentAboutUser';
+import ComponentExperience from './componentExperience';
 
 function App() {
     const [forecasts, setForecasts] = useState();
@@ -33,7 +35,8 @@ function App() {
                 <ComponentAfooter/>
             </div>
             <div className='componentB'>
-                <p>Hello shaddy</p>
+                <ComponentAboutUser/>
+                <ComponentExperience/>
             </div>
         </div>
     );

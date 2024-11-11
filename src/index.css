@@ -63,7 +63,8 @@ h2 {
   font-weight: bold;
   margin-left: 10px;
   display: inline;
-  animation: blink 0.8s step-end infinite; /* Makes the underscore blink */
+  animation: blink 0.8s step-end infinite;
+  font-size: 20px;
 }
 
 /* Blinking effect for the underscore */

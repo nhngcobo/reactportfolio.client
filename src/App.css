@@ -35,12 +35,13 @@ body {
     width: 400px; 
     word-wrap: break-word;
     text-align: left;
-    
+    position: fixed;
+
 }
 
 .ComponentAboutUser {
-    margin-left: 20%;
-    padding-top: 10vh;
+    margin-left: 100vh;
+    padding-top: 13vh;
     width: 50%; 
     word-wrap: break-word;
     text-align: left;
@@ -52,7 +53,7 @@ body {
 }
 
 .ComponentExperience {
-    margin-left: 20%;
+    margin-left: 100vh;
     width: 50%;
     margin-top: 10vh; 
     word-wrap: break-word;
@@ -60,7 +61,7 @@ body {
 }
 
 .ComponentProjects {
-    margin-left: 20%;
+    margin-left: 100vh;
     width: 50%;
     margin-top: 10vh; 
     word-wrap: break-word;

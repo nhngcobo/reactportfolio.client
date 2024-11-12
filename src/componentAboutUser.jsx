@@ -1,5 +1,7 @@
 import React from "react";
 import data from '../src/data/en.json';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 class ComponentAboutUser extends React.Component {
 
@@ -13,8 +15,9 @@ class ComponentAboutUser extends React.Component {
         return (
             <div className="ComponentAboutUser">
                 <p>{this.text.jobDesc}</p>
-                <p>{this.text.jobDesc}</p>
-                <p>{this.text.jobDesc}</p>
+                <p>{this.text.jobDescB}</p>
+                <i class="fa-solid fa-volleyball fa-bounce"></i>
+                <p>{this.text.jobDescC}</p>
             </div>
         )
     }

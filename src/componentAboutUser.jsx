@@ -16,8 +16,7 @@ class ComponentAboutUser extends React.Component {
             <div className="ComponentAboutUser">
                 <p>{this.text.jobDesc}</p>
                 <p>{this.text.jobDescB}</p>
-                <i class="fa-solid fa-volleyball fa-bounce"></i>
-                <p>{this.text.jobDescC}</p>
+                <p>{this.text.jobDescF}<i class="fa-solid fa-volleyball fa-bounce"></i>{this.text.jobDescFB}</p>
             </div>
         )
     }

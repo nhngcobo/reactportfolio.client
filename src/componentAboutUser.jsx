@@ -13,6 +13,8 @@ class ComponentAboutUser extends React.Component {
         return (
             <div className="ComponentAboutUser">
                 <p>{this.text.jobDesc}</p>
+                <p>{this.text.jobDesc}</p>
+                <p>{this.text.jobDesc}</p>
             </div>
         )
     }

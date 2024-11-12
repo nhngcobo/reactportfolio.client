@@ -1,6 +1,5 @@
 import React from "react";
 import data from '../src/data/en.json';
-import ComponentABody from '../src/componentABody';
 
 class IndexPageComponentA extends React.Component {
   constructor(props) {
@@ -57,7 +56,6 @@ class IndexPageComponentA extends React.Component {
           <h3 className="inline-text">{this.text.overallJobDesc}</h3> 
           <h3 className="typing-text">{this.state.overallJobDesc}</h3>
         </div>
-        <ComponentABody/>
       </>
     );
   }

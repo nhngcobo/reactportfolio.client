@@ -91,11 +91,26 @@ body {
 }
 
 
-.ComponentAfooter{
+
+
+.ComponentAfooter {
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 10%; 
     margin-top: 85%;
-    margin-left: 5%;
     display: flex;
     gap: 10px; 
+}
+
+.ComponentAfooter img {
+    margin: 0 10px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.ComponentAfooter img:hover {
+    transform: scale(1.5);
 }
 
 body {

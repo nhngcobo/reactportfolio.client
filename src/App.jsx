@@ -6,6 +6,9 @@ import ComponentAfooter from './componentAfooter';
 import ComponentAboutUser from './componentAboutUser';
 import ComponentExperience from './componentExperience';
 import ComponentProjects from './componentProjects';
+import ComponentExperienceJAVA from './componentExperienceJAVA'
+import ComponentExperienceSAP from './componentExperienceSAP'
+import ComponentExperienceApigee from './componentExperienceApigee'
 import data from '../src/data/en.json';
 
 
@@ -75,6 +78,9 @@ function App() {
                 </div>
                 <div id="experience" className="component-section">
                     <ComponentExperience />
+                    <ComponentExperienceJAVA />
+                    <ComponentExperienceSAP />
+                    <ComponentExperienceApigee />
                 </div>
                 <div id="projects" className="component-section">
                     <ComponentProjects/>

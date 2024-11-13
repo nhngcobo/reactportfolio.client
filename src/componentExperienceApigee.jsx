@@ -1,7 +1,7 @@
 import React from "react";
 import data from '../src/data/en.json';
 
-class ComponentExperience extends React.Component {
+class ComponentExperienceApigee extends React.Component {
 
     constructor(props) {
         super(props);
@@ -12,11 +12,10 @@ class ComponentExperience extends React.Component {
     render() {
         return (
             <div className="ComponentExperience">
-                <p className="duration">2024 - Present</p>
+                <p className="duration">2020 - 2023</p>
                 <div>
-                    <p>Deloiite Consulting</p>
-                    <p>Software Engineer</p>
-                    <p>{this.text.jobDescCompB}</p>
+                    <p>Integration Developer</p>
+                    <p>{this.text.jobDescApigee}</p>
                 </div>
                 
             </div>
@@ -24,4 +23,4 @@ class ComponentExperience extends React.Component {
     }
 }
 
-export default ComponentExperience;
+export default ComponentExperienceApigee;

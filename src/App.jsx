@@ -13,7 +13,7 @@ import data from '../src/data/en.json';
 
 
 function App() {
-    useEffect(() => {
+    /*useEffect(() => {
         const handleMouseMove = (e) => {
             const gradient = `radial-gradient(circle ${500}px at ${e.clientX}px ${e.clientY}px, #304c64, #132335)`;
             document.body.style.background = gradient;
@@ -30,7 +30,7 @@ function App() {
             document.body.removeEventListener('mousemove', handleMouseMove);
             document.body.removeEventListener('mouseleave', handleMouseLeave);
         };
-    }, []);
+    }, []);*/
 
     return (
         <div className="divideComponents">

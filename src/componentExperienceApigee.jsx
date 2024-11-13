@@ -12,7 +12,7 @@ class ComponentExperienceApigee extends React.Component {
     render() {
         return (
             <div className="ComponentExperience">
-                <p className="duration">2020 - 2023</p>
+                <p className="duration-apigee">2020 - 2023</p>
                 <div>
                     <p>Integration Developer</p>
                     <p>{this.text.jobDescApigee}</p>

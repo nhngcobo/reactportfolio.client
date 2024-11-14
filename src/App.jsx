@@ -38,36 +38,40 @@ function App() {
                 <IndexPageComponentA />
                 <nav>
                     <ul className="custom-list">
-                        <li>
-                            <ScrollLink
-                                to="about"
-                                smooth={true}
-                                duration={500}
-                                activeClass="active"
-                            >
+                        <ScrollLink
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            activeClass="active"
+                        >
+                            <li>
+
                                 About
-                            </ScrollLink>
-                        </li>
-                        <li>
-                            <ScrollLink
-                                to="experience"
-                                smooth={true}
-                                duration={500}
-                                activeClass="active"
-                            >
+                            </li>
+
+                        </ScrollLink>
+
+                        <ScrollLink
+                            to="experience"
+                            smooth={true}
+                            duration={500}
+                            activeClass="active"
+                        >  <li>
                                 Experience
-                            </ScrollLink>
-                        </li>
-                        <li>
-                            <ScrollLink
-                                to="projects"
-                                smooth={true}
-                                duration={500}
-                                activeClass="active"
-                            >
+                            </li>
+                        </ScrollLink>
+
+
+                        <ScrollLink
+                            to="projects"
+                            smooth={true}
+                            duration={500}
+                            activeClass="active"
+                        ><li>
                                 Projects
-                            </ScrollLink>
-                        </li>
+                            </li>
+                        </ScrollLink>
+
                     </ul>
                 </nav>
                 <ComponentAfooter />
@@ -83,7 +87,7 @@ function App() {
                     <ComponentExperienceApigee />
                 </div>
                 <div id="projects" className="component-section">
-                    <ComponentProjects/>
+                    <ComponentProjects />
                 </div>
             </div>
         </div>

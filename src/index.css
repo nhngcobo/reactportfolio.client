@@ -53,9 +53,10 @@ h2 {
 }
 
 .custom-list li:hover {
-  background-color: #1c2f44; 
   transform: translateX(10px); 
+  border-radius: 10px;
   color: white; 
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .typing-text {

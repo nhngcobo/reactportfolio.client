@@ -119,13 +119,6 @@ body {
 }
 
 /* Highlight the active link */
-.custom-list .active {
-    background-color: rgba(0, 123, 255, 0.5); 
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    transition: background-color 0.3s;
-}
 
 
 .component-section {

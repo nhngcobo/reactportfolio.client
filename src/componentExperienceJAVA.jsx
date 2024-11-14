@@ -16,6 +16,12 @@ class ComponentExperienceJAVA extends React.Component {
                 <div>
                     <p>Software Engineer</p>
                     <p>{this.text.jobDescJAVA}</p>
+                    <div className="tech-skills">
+                        <p className="skill">JAVA</p>
+                        <p className="skill">JSP</p>
+                        <p className="skill">CSS</p>
+                        <p className="skill">SQL</p>
+                    </div>
                 </div>
                 
             </div>

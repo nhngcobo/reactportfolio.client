@@ -16,6 +16,11 @@ class ComponentExperienceSAP extends React.Component {
                 <div>
                     <p>Integration Developer</p>
                     <p>{this.text.JobDescSAP}</p>
+                    <div className="tech-skills">
+                        <p className="skill">SAP CPI</p>
+                        <p className="skill">API</p>
+                        <p className="skill">Groovy script</p>
+                    </div>
                 </div>
                 
             </div>

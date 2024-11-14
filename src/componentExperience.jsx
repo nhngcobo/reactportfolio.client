@@ -17,6 +17,13 @@ class ComponentExperience extends React.Component {
                     <p>Deloiite Consulting</p>
                     <p>Software Engineer</p>
                     <p>{this.text.jobDescCompB}</p>
+                    <div className="tech-skills">
+                        <p className="skill">C#</p>
+                        <p className="skill">React JS</p>
+                        <p className="skill">CSS</p>
+                        <p className="skill">SQL</p>
+                    </div>
+                    
                 </div>
                 
             </div>

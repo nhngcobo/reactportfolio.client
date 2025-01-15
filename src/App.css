@@ -131,7 +131,9 @@ body {
 }
 
 
-
+.construction {
+    margin-left: 2vh;
+}
 
 .ComponentAfooter {
     padding: 10px 20px;

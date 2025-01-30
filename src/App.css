@@ -135,6 +135,10 @@ body {
     margin-left: 2vh;
 }
 
+.portfolioScreenshot{
+    width: 20vh;
+}
+
 .ComponentAfooter {
     padding: 10px 20px;
     text-align: center;

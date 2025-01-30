@@ -1,7 +1,7 @@
 import React from "react";
 import data from './data/en.json';
 import construction from '../src/assets/icons8-under-construction-96.png';
-
+import ComponentPortfolio from '../src/componentPortfoliProject';
 
 class ComponentProjects extends React.Component {
 
@@ -13,11 +13,12 @@ class ComponentProjects extends React.Component {
       
     render() {
         return (
+            <>
             <div className="ComponentProjects">
-                <p>{this.text.jobProjects} <img className="construction"
-                                                src={construction}
-                                           /></p>
+                <p>{this.text.Projects}</p>                          
             </div>
+                            <ComponentPortfolio/> 
+            </>
         )
     }
 }

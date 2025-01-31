@@ -93,6 +93,10 @@ body {
     width: 13%;
 }
 
+.PortfolioProject{
+    margin-left: 5vh;
+}
+
 .duration-apigee{
     width: 45%;
 }
@@ -137,6 +141,7 @@ body {
 
 .portfolioScreenshot{
     width: 20vh;
+    border: 3px solid whitesmoke;
 }
 
 .ComponentAfooter {

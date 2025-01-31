@@ -13,10 +13,11 @@ class ComponentPortfoliProject extends React.Component {
       
     render() {
         return (
-            <div className="ComponentProjects">
-                <img className="portfolioScreenshot"
-                                                src={portfolioScreenshot}
-                                           />
+            <div  className="ComponentExperience">
+                <img className="portfolioScreenshot" src={portfolioScreenshot}/>
+                <div>
+                    <p className="PortfolioProject">{this.text.PortfolioProject}</p>
+                </div>
             </div>
         )
     }

@@ -18,5 +18,6 @@
         "jobProjects": "This section will detail side projects I have been busy with, outside the work environment.",
         "About": "About",
         "Projects": "Projects",
-        "Experince": "Experince"
+        "Experince": "Experince",
+        "PortfolioProject": "Portfolio website; This website is built with React.js Front-End. It contains multiple components that render different sections of the site. The backend is a python Back-end, this is because we're looking to impliment a chatbot that'll assist with some questions while you are on the site."
 } 

@@ -50,7 +50,7 @@ class IndexPageComponentA extends React.Component {
   render() {  
     return (
       <>
-        <h1>{this.text.fullnames}</h1>  
+        <h1 className="headingName">{this.text.fullnames}</h1>  
         <h3>{this.text.occupation}</h3>
         <div className="slogan-text">
           <h3 className="inline-text">{this.text.overallJobDesc}</h3> 

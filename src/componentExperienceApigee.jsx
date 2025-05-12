@@ -1,5 +1,7 @@
 import React from "react";
 import data from '../src/data/en.json';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 class ComponentExperienceApigee extends React.Component {
 
@@ -19,10 +21,10 @@ class ComponentExperienceApigee extends React.Component {
                     <div className="tech-skills">
                         <p className="skill">Postman</p>
                         <p className="skill">Swagger</p>
-                        <p className="skill">Javascript</p>
-                        <p className="skill">Google Apigee</p>
-                        <p className="skill">SOAP</p>
-                        <p className="skill">JSON</p>
+                        <p className="skill">Javascript <i class="fa-brands fa-js"></i></p>
+                        <p className="skill">Apigee <i class="bi bi-google"></i></p>
+                        <p className="skill">SOAP <i class="fa-solid fa-bars-staggered"></i></p>
+                        <p className="skill">JSON <i class="bi bi-filetype-json"></i></p>
                     </div>
                 </div>
                 

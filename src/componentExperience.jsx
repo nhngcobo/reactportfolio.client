@@ -22,6 +22,7 @@ class ComponentExperience extends React.Component {
                         <p className="skill">React JS <i class="fa-brands fa-js"></i></p>
                         <p className="skill">CSS  <i class="bi bi-filetype-css"></i></p>
                         <p className="skill">SQL  <i class="fa-solid fa-database"></i></p>
+                        <p className="skill">DevOps  <i class="bi bi-git"></i></p>
                     </div>
                     
                 </div>

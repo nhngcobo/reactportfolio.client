@@ -65,7 +65,7 @@ th, td {
     gap: 1rem;
     margin-bottom: 2rem;
     margin-left: 13vh;
-    max-width: 80vh;
+    max-width: 90vh;
     word-wrap: break-word;
     text-align: left;
     transform: scale(1);
@@ -94,12 +94,17 @@ th, td {
 }
 
 .skill {
+    white-space: nowrap; 
+    display: inline-flex;    
+    align-items: center;     
+    gap: 0.5rem;               
     border-radius: 10px;
     background-color: #213547;
     color: rgb(145, 223, 226);
     padding-left: 10px;
     padding-right: 10px;
-}
+  }
+  
 
 .PortfolioProject {
     margin-left: 5vh;

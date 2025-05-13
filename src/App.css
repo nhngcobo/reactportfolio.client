@@ -1,6 +1,16 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-/* Option 2: Import via CSS */
+﻿/* Import Google Font: Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
 
 #root {
     max-width: 1280px;
@@ -14,16 +24,6 @@
 th, td {
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s;
-
 }
 
 .divideComponents {
@@ -42,15 +42,13 @@ body {
     word-wrap: break-word;
     text-align: left;
     position: relative;
-    font-family: "Brush Script MT", cursive;
-
-
+    font-family: 'Times New Roman', serif;
 }
 
 .ComponentAboutUser {
     margin-left: 13vh;
     padding-top: 13vh;
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Times New Roman', serif;
     width: 80vh; 
     word-wrap: break-word;
     text-align: left;
@@ -73,7 +71,7 @@ body {
     transform: scale(1);
     padding: 1rem;
     border-radius: 10px;
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Times New Roman', serif;
     transition: transform 0.4s;
 }
 
@@ -90,11 +88,12 @@ body {
     font-weight:200;
 }
 
-.tech-skills{
+.tech-skills {
     display: flex;
     gap: 2vh;
 }
-.skill{
+
+.skill {
     border-radius: 10px;
     background-color: #213547;
     color: rgb(145, 223, 226);
@@ -102,11 +101,9 @@ body {
     padding-right: 10px;
 }
 
-
-.PortfolioProject{
+.PortfolioProject {
     margin-left: 5vh;
 }
-
 
 .componentB {
     flex: 1; 
@@ -117,8 +114,6 @@ body {
     gap: 5px;
 }
 
-
-
 .component-section {
     padding: 20px;
     transition: background-color 0.3s;
@@ -128,12 +123,11 @@ body {
     background-color: rgba(0, 123, 255, 0.1);
 }
 
-
 .construction {
     margin-left: 2vh;
 }
 
-.portfolioScreenshot{
+.portfolioScreenshot {
     width: 20vh;
     border: 3px solid whitesmoke;
 }
@@ -160,12 +154,6 @@ body {
     transform: scale(1.5);
 }
 
-body {
-    margin: 0;
-    height: 100vh; 
-}
-
-
 .container {
     text-align: center;
     padding: 20px;
@@ -188,15 +176,14 @@ p {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
- @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     body {
         background-color: #132335;
     }
 }
 
 .ComponentProjects {
-    font-family: "Brush Script MT", cursive;
-
+    font-family: 'Times New Roman', serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,7 +198,7 @@ p {
         position: static;
     }
 
-    .ComponentProjects 
+    .ComponentProjects, 
     .ComponentAboutUser,
     .ComponentExperience {
         margin-left: 0;

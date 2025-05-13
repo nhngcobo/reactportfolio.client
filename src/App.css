@@ -133,8 +133,9 @@ th, td {
 }
 
 .portfolioScreenshot {
-    width: 20vh;
-    border: 3px solid whitesmoke;
+    width: 35vh;
+    margin-top: 2vh;
+    border: 1px solid whitesmoke;
 }
 
 .ComponentAfooter {

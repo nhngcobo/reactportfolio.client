@@ -2,6 +2,7 @@ import React from "react";
 import data from './data/en.json';
 import construction from '../src/assets/icons8-under-construction-96.png';
 import ComponentPortfolio from '../src/componentPortfoliProject';
+import SentimentsProject from '../src/componentSentimentAnalysis';
 
 class ComponentProjects extends React.Component {
 
@@ -18,6 +19,7 @@ class ComponentProjects extends React.Component {
                 <p>{this.text.Projects}</p>                          
             </div>
                             <ComponentPortfolio/> 
+                            <SentimentsProject />
             </>
         )
     }

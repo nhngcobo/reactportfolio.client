@@ -19,5 +19,9 @@
         "About": "About",
         "Projects": "Projects",
         "Experince": "Experince",
-        "PortfolioProject": "Portfolio website; This website is built with React.js Front-End. It contains multiple components that render different sections of the site. The backend is a python Back-end, this is because we're looking to impliment a chatbot that'll assist with some questions while you are on the site."
+        "PortfolioProject": "Portfolio website; This website is built with React.js Front-End. It contains multiple components that render different sections of the site. The backend is a python Back-end, this is because we're looking to impliment a chatbot that'll assist with some questions while you are on the site.",
+        "SentimentsProject": "This mini-project focuses on sentiment analysis of social media posts.\nThe front end is built with ReactJS, the backend uses C# .NET, and a Python microservice runs the machine learning model responsible for processing the sentiment of the text.",
+        "SentimentsProject2": "When the program loads, the user is presented with a pop-up modal allowing them to choose which ML model (Vader or Pytorch) to use.\nAfter making a selection, a text box appears where the user can enter text.\nThis input is sent to the backend, then forwarded to the microservice, which responds with the sentiment result.\nThe output is displayed as a printed statement just below the text box.",
+        "SentimentsProject3": "NB; this project is still in progress but available for Demo on local."
+
 } 

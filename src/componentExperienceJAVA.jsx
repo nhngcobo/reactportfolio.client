@@ -1,5 +1,6 @@
 import React from "react";
 import data from '../src/data/en.json';
+import jspLogo from '../src/assets/icons8-jsp-64.png';
 
 class ComponentExperienceJAVA extends React.Component {
 
@@ -18,7 +19,12 @@ class ComponentExperienceJAVA extends React.Component {
                     <p>{this.text.jobDescJAVA}</p>
                     <div className="tech-skills">
                         <p className="skill">JAVA <i class="fa-brands fa-java"></i></p>
-                        <p className="skill">JSP</p>
+                        <p className="skill">JSP
+                            <img
+                                src={jspLogo}
+                                style={{height:"1.3rem"}}
+                            />
+                        </p>
                         <p className="skill">CSS  <i class="bi bi-filetype-css"></i></p>
                         <p className="skill">SQL  <i class="fa-solid fa-database"></i></p>
                     </div>

@@ -1,6 +1,9 @@
 import React from "react";
 import data from '../src/data/en.json';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import swaggerLogo from '../src/assets/icons8-swagger-96.png';
+import postmanLogo from '../src/assets/icons8-postman-inc-24.png';
+
 
 
 class ComponentExperienceApigee extends React.Component {
@@ -9,7 +12,6 @@ class ComponentExperienceApigee extends React.Component {
         super(props);
         this.text = data;
       }
-
       
     render() {
         return (
@@ -19,8 +21,18 @@ class ComponentExperienceApigee extends React.Component {
                     <p>Integration Developer</p>
                     <p>{this.text.jobDescApigee}</p>
                     <div className="tech-skills">
-                        <p className="skill">Postman</p>
-                        <p className="skill">Swagger</p>
+                        <p className="skill">Postman
+                        <img
+                                src={postmanLogo}
+                                style={{height:"1.3rem"}}
+                            />
+                        </p>
+                        <p className="skill">Swagger
+                            <img
+                                src={swaggerLogo}
+                                style={{height:"1.3rem"}}
+                            />
+                        </p>
                         <p className="skill">Javascript <i class="fa-brands fa-js"></i></p>
                         <p className="skill">Apigee <i class="bi bi-google"></i></p>
                         <p className="skill">SOAP <i class="fa-solid fa-bars-staggered"></i></p>

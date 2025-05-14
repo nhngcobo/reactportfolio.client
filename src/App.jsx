@@ -45,7 +45,6 @@ function App() {
                             activeClass="active"
                         >
                             <li>
-
                                 About
                             </li>
 

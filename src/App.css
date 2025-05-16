@@ -82,8 +82,8 @@ th, td {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 2rem;
-    right: 2rem; /* add this to position it on the right */
+    top: 1rem;
+    right: 0.5rem; /* add this to position it on the right */
     z-index: 1;
     border: none;
   }

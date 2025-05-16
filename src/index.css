@@ -38,7 +38,7 @@ h2 {
 
 .custom-list {
   list-style-type: circle;
-  padding: 0;
+  padding: 2rem;
 }
 
 .custom-list li {

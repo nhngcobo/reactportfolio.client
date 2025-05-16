@@ -11,6 +11,7 @@ import ComponentExperienceApigee from './componentExperienceApigee'
 import { ThemeContext } from './ThemeContext';
 import { useContext } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
+import ChangeThemeComponent from './changeTheme';
 
 
 
@@ -21,8 +22,9 @@ function App() {
         <>
             <div className={`root ${theme}`}>
                 <div className="divideComponents">
+                    <ChangeThemeComponent theme={theme} toggleTheme={toggleTheme} />
                     <div className="componentA">
-                        <IndexPageComponentA theme={theme} toggleTheme={toggleTheme} />
+                        <IndexPageComponentA />
                         <nav>
                             <ul className="custom-list">
                                 <ScrollLink to="about" smooth={true} duration={500} activeclassname="active">

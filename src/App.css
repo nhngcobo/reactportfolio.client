@@ -82,13 +82,12 @@ th, td {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2rem;
+    right: 2rem; /* add this to position it on the right */
     z-index: 1;
-    margin-top: 12vh;
-    padding-right: 2rem;
     border: none;
   }
+  
   
   .header-container {
     display: flex;

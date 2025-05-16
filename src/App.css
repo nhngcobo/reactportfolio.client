@@ -313,7 +313,7 @@ p {
     .ComponentAfooter {
         position: static;
         margin-top: 2rem;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .portfolioScreenshot {

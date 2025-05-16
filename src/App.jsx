@@ -52,7 +52,7 @@ function App() {
                             <ComponentExperienceApigee />
                         </div>
                         <div id="projects" className="component-section">
-                            <ComponentProjects />
+                            <ComponentProjects  theme={theme}/>
                         </div>
                     </div>
                 </div>

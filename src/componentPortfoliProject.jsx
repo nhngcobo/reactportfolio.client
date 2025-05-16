@@ -1,6 +1,8 @@
 import React from "react";
 import data from './data/en.json';
-import portfolioScreenshot from '../src/assets/portfoliScreenshot.png';
+import portfolioScreenshotDark from '../src/assets/portfoliScreenshot.png';
+import portfolioScreenshot from '../src/assets/portfolioSS.png';
+
 import sourceLogo from '../src/assets/icons8-github-link.png';
 
 
@@ -17,9 +19,14 @@ class ComponentPortfoliProject extends React.Component {
     }
       
     render() {
+        const { theme } = this.props;
+
         return (
             <div  className="ComponentExperience">
-                <img className="portfolioScreenshot" src={portfolioScreenshot}/>
+                {theme == "light" ? <img className="portfolioScreenshot" src={portfolioScreenshotDark}/>
+                : <img className="portfolioScreenshot" src={portfolioScreenshot}/>
+                }
+                
                 <div>
                     <p className="PortfolioProject">{this.text.PortfolioProject}</p>
                 </div>

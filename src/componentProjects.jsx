@@ -12,12 +12,14 @@ class ComponentProjects extends React.Component {
 
 
     render() {
+        const { theme } = this.props;
+
         return (
             <>
                 <div className="ComponentProjects">
                     <p>{this.text.Projects}</p>
                 </div>
-                <ComponentPortfolio />
+                <ComponentPortfolio theme={theme} />
                 <SentimentsProject />
             </>
         )

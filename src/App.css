@@ -26,6 +26,98 @@ th, td {
     padding-right: 1rem;
 }
 
+[data-theme="light"] {
+    background-color: #424c4e56;
+    color: #22201f;
+    
+  }
+  [data-theme="light"] p {
+    color: black;
+  }
+  
+  [data-theme="light"] h1 {
+    color: black;
+  }
+
+  [data-theme="light"] li{
+    color: black;
+  }
+
+  [data-theme="light"] li:hover{
+    color: black;
+    background-color: rgba(240, 229, 216, 0.281);
+  }
+
+  [data-theme="light"] .ComponentExperience:hover{
+        transform: scale(1.12);
+        background-color: rgba(240, 229, 216, 0.281);
+  }
+
+  [data-theme="light"] .skill{
+    background-color: rgba(128, 128, 128, 0.527);
+  }
+
+  [data-theme="light"] 
+    .scroll-to-top {
+        background: #44444483;
+        color: white;
+      }
+  
+      [data-theme="light"] 
+      .scroll-to-top:hover {
+          background: rgba(90, 79, 79, 0.808);
+          color: white;
+        }
+    
+  [data-theme="light"] .github-Link{
+    background-color: grey;
+  }
+
+  [data-theme="dark"] {
+    background-color: #132335;
+    color: rgba(255, 255, 255, 0.986);
+  }
+    
+  .theme-toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-top: 12vh;
+    padding-right: 2rem;
+    border: none;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background: #f7f5f51f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background: #00000038;
+  }
+  
 .divideComponents {
     display: flex; 
     position: absolute; 
@@ -157,9 +249,10 @@ th, td {
     gap: 10px;
     justify-content: center;
     margin-top: 2rem; 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative; 
     width:max-content;
+    flex-direction: row;
 }
 
 .ComponentAfooter img {
@@ -189,16 +282,11 @@ p {
     margin-top: 20px;
     color: #213547;
 }
-
+  
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #132335;
-    }
-}
 
 .ComponentProjects {
     font-family: 'Times New Roman', serif;

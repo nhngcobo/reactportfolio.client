@@ -48,17 +48,29 @@ class IndexPageComponentA extends React.Component {
   }
 
   render() {  
+    const { theme, toggleTheme } = this.props;
+
     return (
       <>
-        <h1 className="headingName">{this.text.fullnames}</h1>  
+        <div className="header-container">
+          <h1 className="headingName">{this.text.fullnames}</h1>
+          <button onClick={toggleTheme} className="theme-toggle-btn">
+            {theme === "light" ? (
+              <i className="bi bi-moon-fill" style={{ fontSize: 23 }}></i>
+            ) : (
+              <i className="bi bi-brightness-high" style={{ fontSize: 23, color: "white" }}></i>
+            )}
+          </button>
+        </div>
+  
         <h3>{this.text.occupation}</h3>
+  
         <div className="slogan-text">
-          <h3 className="inline-text">{this.text.overallJobDesc}</h3> 
+          <h3 className="inline-text">{this.text.overallJobDesc}</h3>
           <h3 className="typing-text">{this.state.overallJobDesc}</h3>
         </div>
       </>
     );
-  }
-}
-
+  
+  }}
 export default IndexPageComponentA;

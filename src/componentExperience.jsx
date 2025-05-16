@@ -1,6 +1,5 @@
 import React from "react";
 import data from '../src/data/en.json';
-import netLogo from '../src/assets/icons8-.net-framework.svg';
 import jspLogo from '../src/assets/icons8-react.svg';
 
 
@@ -21,10 +20,6 @@ class ComponentExperience extends React.Component {
                     <p>{this.text.jobDescCompB}</p>
                     <div className="tech-skills">
                         <p className="skill">C# .NET
-                            <img
-                                src={netLogo}
-                                style={{ height: "1.3rem" }}
-                            />
                         </p>
                         <p className="skill">React JS
                             <img

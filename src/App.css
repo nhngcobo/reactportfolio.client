@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 
 body {
     margin: 0;
@@ -21,7 +23,8 @@ body {
     flex-grow: 1;
 }
 
-th, td {
+th,
+td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -29,75 +32,126 @@ th, td {
 [data-theme="light"] {
     background-color: #424c4e56;
     color: #22201f;
-    
-  }
-  [data-theme="light"] p {
-    color: black;
-  }
-  
-  [data-theme="light"] h1 {
-    color: black;
-  }
 
-  [data-theme="light"] li{
-    color: black;
-  }
+}
 
-  [data-theme="light"] li:hover{
+[data-theme="light"] p {
+    color: black;
+}
+
+[data-theme="light"] h1 {
+    color: black;
+}
+
+[data-theme="light"] li {
+    color: black;
+}
+
+[data-theme="light"] li:hover {
     color: black;
     background-color: rgba(240, 229, 216, 0.281);
-  }
+}
 
-  [data-theme="light"] .ComponentExperience:hover{
-        transform: scale(1.12);
-        background-color: rgba(240, 229, 216, 0.281);
-  }
 
-  [data-theme="light"] .skill{
+[data-theme="light"] .ComponentExperience:hover {
+    transform: scale(1.12);
+    background-color: rgba(240, 229, 216, 0.281);
+}
+
+[data-theme="light"] .skill {
     background-color: rgba(128, 128, 128, 0.527);
-  }
+}
 
-  [data-theme="light"] 
-    .scroll-to-top {
-        background: #44444483;
-        color: white;
-      }
-  
-      [data-theme="light"] 
-      .scroll-to-top:hover {
-          background: rgba(90, 79, 79, 0.808);
-          color: white;
-        }
-    
-  [data-theme="light"] .github-Link{
+[data-theme="light"] .scroll-to-top {
+    background: #44444483;
+    color: white;
+}
+
+[data-theme="light"] .scroll-to-top:hover {
+    background: rgba(90, 79, 79, 0.808);
+    color: white;
+}
+
+[data-theme="light"] .github-Link {
     background-color: grey;
-  }
+}
 
-  [data-theme="dark"] {
+[data-theme="dark"] {
     background-color: #132335;
     color: rgba(255, 255, 255, 0.986);
-  }
-    
-  .theme-toggle-btn {
+}
+
+[data-theme="mono"] li ,
+[data-theme="mono"] p {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.theme-toggle-btn {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
     top: 1rem;
-    right: 0.5rem; /* add this to position it on the right */
+    right: 0.5rem;
     z-index: 1;
     border: none;
-  }
-  
-  
-  .header-container {
+}
+
+
+.theme-change {
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 1;
+    border: none;
+    word-spacing: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.shader-theme {
+    word-spacing: 3rem;
+}
+
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: small;
+}
+
+.theme-option i {
+    transition: color 0.2s ease-in-out;
+}
+
+.theme-option.active i{
+    color: limegreen;
+    /* highlight active theme */
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    font-size: small;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
     padding-top: 1rem;
-  }
-  
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 2rem;
@@ -111,25 +165,25 @@ th, td {
     cursor: pointer;
     z-index: 999;
     transition: opacity 0.3s ease;
-  }
-  
-  .scroll-to-top:hover {
+}
+
+.scroll-to-top:hover {
     background: #00000038;
-  }
-  
+}
+
 .divideComponents {
-    display: flex; 
-    position: absolute; 
+    display: flex;
+    position: absolute;
     top: 0;
-    left: 0; 
-    width: 100%; 
+    left: 0;
+    width: 100%;
 }
 
 .componentA {
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
     padding-left: 10rem;
     padding-top: 8vh;
-    width: 35%; 
+    width: 35%;
     word-wrap: break-word;
     text-align: left;
     position: relative;
@@ -140,11 +194,12 @@ th, td {
     margin-left: 13vh;
     padding-top: 13vh;
     font-family: 'Times New Roman', serif;
-    width: 80vh; 
+    width: 80vh;
     word-wrap: break-word;
     text-align: left;
     transform: scale(1);
     transition: transform 0.4s;
+
     &:hover {
         transform: scale(1.1);
     }
@@ -176,7 +231,7 @@ th, td {
 .duration-sap,
 .duration-apigee {
     flex: 0 0 10rem;
-    font-weight:200;
+    font-weight: 200;
 }
 
 .tech-skills {
@@ -185,21 +240,21 @@ th, td {
 }
 
 .skill {
-    white-space: nowrap; 
-    display: inline-flex;    
-    align-items: center;     
-    gap: 0.5rem;               
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     border-radius: 10px;
     background-color: #213547;
     color: rgb(145, 223, 226);
     padding-left: 10px;
     padding-right: 10px;
-  }
-  
+}
+
 .github-Link {
-    white-space: nowrap; 
-    display: inline-flex;    
-    align-items: center;     
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
     border-radius: 10px;
     background-color: #213547;
     color: rgb(145, 223, 226);
@@ -214,7 +269,7 @@ th, td {
 }
 
 .componentB {
-    flex: 1; 
+    flex: 1;
 }
 
 .ComponentABody {
@@ -247,10 +302,10 @@ th, td {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     flex-wrap: nowrap;
-    position: relative; 
-    width:max-content;
+    position: relative;
+    width: max-content;
     flex-direction: row;
 }
 
@@ -281,7 +336,7 @@ p {
     margin-top: 20px;
     color: #213547;
 }
-  
+
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -296,14 +351,15 @@ p {
         flex-direction: column;
     }
 
-    .componentA, .componentB {
+    .componentA,
+    .componentB {
         width: 100%;
         padding: 1rem;
         margin: 0;
         position: static;
     }
 
-    .ComponentProjects, 
+    .ComponentProjects,
     .ComponentAboutUser,
     .ComponentExperience {
         margin-left: 0;

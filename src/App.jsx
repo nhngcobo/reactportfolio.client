@@ -12,17 +12,19 @@ import { ThemeContext } from './ThemeContext';
 import { useContext } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
 import ChangeThemeComponent from './changeTheme';
+import ShaderBackgroundImage from './ShadebackroundImage';
 
 
 
 function App() {
-    const { theme, toggleTheme } = useContext(ThemeContext); 
+      const { theme, toggleTheme, setMonoTheme, setShaderTheme } = useContext(ThemeContext);
 
     return (
         <>
             <div className={`root ${theme}`}>
+               {theme === 'shader' && <ShaderBackgroundImage />}
                 <div className="divideComponents">
-                    <ChangeThemeComponent theme={theme} toggleTheme={toggleTheme} />
+                    <ChangeThemeComponent theme={theme} toggleTheme={toggleTheme} setMonoTheme={setMonoTheme} setShaderTheme={setShaderTheme} />
                     <div className="componentA">
                         <IndexPageComponentA />
                         <nav>

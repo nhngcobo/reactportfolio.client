@@ -13,13 +13,16 @@
     <PackageJsonDependenciesFortawesomeFontawesomeSvgCore Condition="$(PackageJsonDependenciesFortawesomeFontawesomeSvgCore) == ''">^6.6.0</PackageJsonDependenciesFortawesomeFontawesomeSvgCore>
     <PackageJsonDependenciesFortawesomeReactFontawesome Condition="$(PackageJsonDependenciesFortawesomeReactFontawesome) == ''">^0.2.2</PackageJsonDependenciesFortawesomeReactFontawesome>
     <PackageJsonDependenciesMuiIconsMaterial Condition="$(PackageJsonDependenciesMuiIconsMaterial) == ''">^6.1.7</PackageJsonDependenciesMuiIconsMaterial>
+    <PackageJsonDependenciesReactThreeFiber Condition="$(PackageJsonDependenciesReactThreeFiber) == ''">^8.13.7</PackageJsonDependenciesReactThreeFiber>
+    <PackageJsonDependenciesShadergradientReact Condition="$(PackageJsonDependenciesShadergradientReact) == ''">^2.0.25</PackageJsonDependenciesShadergradientReact>
     <PackageJsonDependenciesBootstrapIcons Condition="$(PackageJsonDependenciesBootstrapIcons) == ''">^1.13.1</PackageJsonDependenciesBootstrapIcons>
     <PackageJsonDependenciesGlReact Condition="$(PackageJsonDependenciesGlReact) == ''">^5.2.0</PackageJsonDependenciesGlReact>
     <PackageJsonDependenciesGlReactDom Condition="$(PackageJsonDependenciesGlReactDom) == ''">^5.2.1</PackageJsonDependenciesGlReactDom>
-    <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
-    <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>
+    <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.2.0</PackageJsonDependenciesReact>
+    <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.2.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^6.28.0</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesReactScroll Condition="$(PackageJsonDependenciesReactScroll) == ''">^1.9.0</PackageJsonDependenciesReactScroll>
+    <PackageJsonDependenciesThree Condition="$(PackageJsonDependenciesThree) == ''">^0.169.0</PackageJsonDependenciesThree>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.13.0</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^18.3.12</PackageJsonDevdependenciesTypesReact>
     <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^18.3.1</PackageJsonDevdependenciesTypesReactDom>

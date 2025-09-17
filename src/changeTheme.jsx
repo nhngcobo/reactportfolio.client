@@ -25,7 +25,7 @@ class ChangeThemeComponent extends React.Component {
           className="wrapper"
           style={{ display: "inline-block", verticalAlign: "middle" }}
         >
-          <div className="theme-change">
+          {/* <div className="theme-change">
             <div
               onClick={setShaderTheme}
               className={`theme-option ${theme === "shader" ? "active" : ""}`}
@@ -54,7 +54,7 @@ class ChangeThemeComponent extends React.Component {
                 </span>
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );

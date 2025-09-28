@@ -18,7 +18,12 @@ const MobileAppsSection = () => {
           <li>Cross-platform: React Native (Expo) for iOS, Android, and web</li>
         </ul>
         <p style={{ fontStyle: 'italic', color: '#555' }}>Platforms: Android, iOS, Web</p>
-  <img src={teamMatchingScreenshot} alt="TalentSync App Screenshot" style={{ width: '100%', maxWidth: 320, borderRadius: 8, marginTop: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12 }}>
+          <img src={teamMatchingScreenshot} alt="TalentSync App Screenshot" style={{ width: '100%', maxWidth: 180, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+          <a href="https://github.com/nhngcobo/PAApp.git" target="_blank" rel="noopener noreferrer" style={{ color: '#213547', fontWeight: 'bold', wordBreak: 'break-all', fontSize: 14 }}>
+            https://github.com/nhngcobo/PAApp.git
+          </a>
+        </div>
       </div>
     </div>
   );

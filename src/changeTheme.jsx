@@ -10,14 +10,10 @@ class ChangeThemeComponent extends React.Component {
         <button
           onClick={theme === 'light' ? this.props.setDarkTheme : this.props.setLightTheme}
           className="theme-toggle-btn theme-animated"
-          style={{ fontSize: 23, verticalAlign: "middle", transition: 'color 0.5s', background: 'none', border: 'none', display: 'inline-flex', alignItems: 'center' }}
+          style={{ fontSize: 18, verticalAlign: "middle", transition: 'color 0.5s', background: 'none', border: 'none', display: 'inline-flex', alignItems: 'center' }}
           title={theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         >
-          {theme === 'light' ? (
-            <i className="bi bi-moon-fill" title="Dark Mode"></i>
-          ) : (
-            <i className="bi bi-brightness-high" title="Light Mode"></i>
-          )}
+          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         </button>
       </div>
     );

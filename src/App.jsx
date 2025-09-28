@@ -11,25 +11,20 @@ import ComponentExperienceApigee from './componentExperienceApigee'
 import { ThemeContext } from './ThemeContext';
 import { useContext } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
-import ChangeThemeComponent from './changeTheme';
+// import ChangeThemeComponent from './changeTheme';
 import ShaderBackgroundImage from './ShadebackroundImage';
 
 
 
 
 function App() {
-    const { theme, toggleTheme, setLightTheme, setDarkTheme } = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
     return (
         <>
             <div className={`root ${theme}`}>
                 <div className="divideComponents">
-                    <ChangeThemeComponent
-                        theme={theme}
-                        toggleTheme={toggleTheme}
-                        setLightTheme={setLightTheme}
-                        setDarkTheme={setDarkTheme}
-                    />
+                    {/* Theme toggle removed */}
                     <div className="componentA">
                         <IndexPageComponentA />
                         <nav>

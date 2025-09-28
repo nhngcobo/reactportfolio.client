@@ -5,14 +5,15 @@ import ComponentAfooter from './componentAfooter';
 import ComponentAboutUser from './componentAboutUser';
 import ComponentExperience from './componentExperience';
 import ComponentProjects from './componentProjects';
-import ComponentExperienceJAVA from './componentExperienceJAVA'
-import ComponentExperienceSAP from './componentExperienceSAP'
-import ComponentExperienceApigee from './componentExperienceApigee'
+
+import ComponentExperienceJAVA from './componentExperienceJAVA';
+import ComponentExperienceSAP from './componentExperienceSAP';
+import ComponentExperienceApigee from './componentExperienceApigee';
 import { ThemeContext } from './ThemeContext';
 import { useContext } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
-// import ChangeThemeComponent from './changeTheme';
 import ShaderBackgroundImage from './ShadebackroundImage';
+import MobileAppsSection from './MobileAppsSection';
 
 
 
@@ -38,6 +39,9 @@ function App() {
                                 <ScrollLink to="projects" smooth={true} duration={500} activeclassname="active">
                                     <li>Projects</li>
                                 </ScrollLink>
+                                <ScrollLink to="mobileapps" smooth={true} duration={500} activeclassname="active">
+                                    <li>Mobile Apps</li>
+                                </ScrollLink>
                             </ul>
                         </nav>
                         <ComponentAfooter />
@@ -55,6 +59,9 @@ function App() {
                         </div>
                         <div id="projects" className="component-section">
                             <ComponentProjects  theme={theme}/>
+                        </div>
+                        <div id="mobileapps" className="component-section">
+                            <MobileAppsSection />
                         </div>
                     </div>
                 </div>

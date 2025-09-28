@@ -1,4 +1,36 @@
-﻿.custom-list .active-nav {
+﻿/* Mobile Apps Section Styling */
+.MobileAppsSection {
+    font-family: 'Times New Roman', serif;
+    color: #000;
+    background: #eaf4fb;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 8px 0 rgba(0,0,0,0.03);
+}
+.MobileAppsSection h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #213547;
+}
+.MobileAppsSection h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #132335;
+}
+.MobileAppsSection p {
+    color: #22201f;
+}
+.MobileAppsSection ul {
+    padding: 0;
+}
+.MobileAppsSection li {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    color: #000;
+}
+.custom-list .active-nav {
     background: #b3d8fd !important;
     color: #000 !important;
     border-radius: 8px;

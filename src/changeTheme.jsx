@@ -1,61 +1,24 @@
 import React from "react";
 
+
 class ChangeThemeComponent extends React.Component {
   render() {
-    const { theme, toggleTheme, setShaderTheme } = this.props;
+  const { theme, toggleTheme, setLightTheme, setDarkTheme } = this.props;
 
     return (
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
         <button
-          onClick={toggleTheme}
-          className="theme-toggle-btn"
-          style={{ fontSize: 23, verticalAlign: "middle" }}
+          onClick={theme === 'light' ? this.props.setDarkTheme : this.props.setLightTheme}
+          className="theme-toggle-btn theme-animated"
+          style={{ fontSize: 23, verticalAlign: "middle", transition: 'color 0.5s', background: 'none', border: 'none', display: 'inline-flex', alignItems: 'center' }}
+          title={theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         >
-          {theme === "light" ? (
+          {theme === 'light' ? (
             <i className="bi bi-moon-fill" title="Dark Mode"></i>
           ) : (
-            <i
-              className="bi bi-brightness-high"
-              style={{ color: "white" }}
-              title="Light Mode"
-            ></i>
+            <i className="bi bi-brightness-high" title="Light Mode"></i>
           )}
         </button>
-        <div
-          className="wrapper"
-          style={{ display: "inline-block", verticalAlign: "middle" }}
-        >
-          {/* <div className="theme-change">
-            <div
-              onClick={setShaderTheme}
-              className={`theme-option ${theme === "shader" ? "active" : ""}`}
-              style={{
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                fontSize: 16,  // normal body text size
-                gap: "0.3rem",
-                color: theme === "shader" ? "white" : "inherit",
-                userSelect: "none",
-              }}
-            >
-              <span className="shaderLabel">Shader</span>
-              {theme === "shader" && (
-                <span
-                  style={{
-                    display: "inline-block",
-                    lineHeight: 1,
-                    color: "white",
-                    fontWeight: "bold",
-                    fontSize: 16, // keep checkmark same size as text
-                  }}
-                >
-                  ✓
-                </span>
-              )}
-            </div>
-          </div> */}
-        </div>
       </div>
     );
   }

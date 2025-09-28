@@ -10,10 +10,10 @@
 
 a {
   font-weight: 500;
-  color: wheat;
+  color: inherit;
   text-decoration: inherit;
   &:hover {
-    color: wheat;
+  color: inherit;
   }
 }
 
@@ -86,7 +86,7 @@ button {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: wheat;
+  color: inherit;
     background-color: #132335;
   }
 

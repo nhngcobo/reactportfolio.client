@@ -16,15 +16,20 @@ import ShaderBackgroundImage from './ShadebackroundImage';
 
 
 
+
 function App() {
-      const { theme, toggleTheme, setMonoTheme, setShaderTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme, setLightTheme, setDarkTheme } = useContext(ThemeContext);
 
     return (
         <>
             <div className={`root ${theme}`}>
-               {theme === 'shader' && <ShaderBackgroundImage />}
                 <div className="divideComponents">
-                    <ChangeThemeComponent theme={theme} toggleTheme={toggleTheme} setMonoTheme={setMonoTheme} setShaderTheme={setShaderTheme} />
+                    <ChangeThemeComponent
+                        theme={theme}
+                        toggleTheme={toggleTheme}
+                        setLightTheme={setLightTheme}
+                        setDarkTheme={setDarkTheme}
+                    />
                     <div className="componentA">
                         <IndexPageComponentA />
                         <nav>

@@ -16,15 +16,14 @@ export const ThemeProvider = ({ children }) => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const setShaderTheme = () => {
-      setTheme('shader');
-  };
+  const setLightTheme = () => setTheme('light');
+  const setDarkTheme = () => setTheme('dark');
 
-    return (
-        <ThemeContext.Provider value={{ theme, toggleTheme, setShaderTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    );
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme, setLightTheme, setDarkTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
 

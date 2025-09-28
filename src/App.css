@@ -1,6 +1,6 @@
 ﻿/* Mobile Apps Section Styling */
 .MobileAppsSection {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     color: #000;
     background: #eaf4fb;
     border-radius: 10px;
@@ -9,24 +9,26 @@
     box-shadow: 2px 0 8px 0 rgba(0,0,0,0.03);
 }
 .MobileAppsSection h2 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #213547;
 }
 .MobileAppsSection h3 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
     color: #132335;
 }
 .MobileAppsSection p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
     color: #22201f;
 }
 .MobileAppsSection ul {
     padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 .MobileAppsSection li {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     color: #000;
 }

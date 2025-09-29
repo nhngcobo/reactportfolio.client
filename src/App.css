@@ -303,8 +303,9 @@ td {
     transform: scale(1);
     padding: 1rem;
     border-radius: 10px;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     transition: transform 0.4s;
+    color: wheat;
 }
 
 .ComponentExperience:hover {

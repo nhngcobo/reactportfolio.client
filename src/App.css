@@ -279,10 +279,11 @@ td {
 .ComponentAboutUser {
     margin-left: 13vh;
     padding-top: 13vh;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     width: 80vh;
     word-wrap: break-word;
     text-align: left;
+    color: wheat;
     transform: scale(1);
     transition: transform 0.4s;
 

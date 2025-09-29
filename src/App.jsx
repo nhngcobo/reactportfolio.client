@@ -30,16 +30,16 @@ function App() {
                         <IndexPageComponentA />
                         <nav>
                             <ul className="custom-list">
-                                <ScrollLink to="about" smooth={true} duration={500} activeclassname="active">
+                                <ScrollLink to="about" smooth={true} duration={500} spy={true} activeClass="active-nav">
                                     <li>About</li>
                                 </ScrollLink>
-                                <ScrollLink to="experience" smooth={true} duration={500} activeclassname="active">
+                                <ScrollLink to="experience" smooth={true} duration={500} spy={true} activeClass="active-nav">
                                     <li>Experience</li>
                                 </ScrollLink>
-                                <ScrollLink to="projects" smooth={true} duration={500} activeclassname="active">
+                                <ScrollLink to="projects" smooth={true} duration={500} spy={true} activeClass="active-nav">
                                     <li>Projects</li>
                                 </ScrollLink>
-                                <ScrollLink to="mobileapps" smooth={true} duration={500} activeclassname="active">
+                                <ScrollLink to="mobileapps" smooth={true} duration={500} spy={true} activeClass="active-nav">
                                     <li>Mobile Apps</li>
                                 </ScrollLink>
                             </ul>

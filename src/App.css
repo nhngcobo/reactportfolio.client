@@ -46,11 +46,12 @@
     font-size: 1rem;
     color: #000;
 }
-.custom-list .active-nav {
-    background: #b3d8fd !important;
+.custom-list .active-nav,
+.custom-list .active-nav li,
+.custom-list li.active-nav {
+    background: wheat !important;
     color: #000 !important;
     border-radius: 8px;
-    font-weight: bold;
     transition: background 0.2s, color 0.2s;
 }
 .componentA, .componentA * {

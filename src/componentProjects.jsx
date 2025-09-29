@@ -17,7 +17,7 @@ class ComponentProjects extends React.Component {
         return (
             <>
                 <div className="ComponentProjects">
-                        <h2 style={{ fontFamily: 'Arial Narrow, Arial, sans-serif', fontWeight: 600, margin: 0 }}>{this.text.Projects}</h2>
+                        <h2 style={{ fontFamily: 'Arial Narrow, Arial, sans-serif', fontWeight: 600, margin: 0, color: "wheat" }}>{this.text.Projects}</h2>
                 </div>
                 <ComponentPortfolio theme={theme} />
                 <SentimentsProject />

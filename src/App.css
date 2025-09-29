@@ -1,4 +1,12 @@
-﻿/* Mobile Apps Section Styling */
+﻿.PortfolioAppSection, .SentimentsAppSection {
+    transition: transform 0.4s;
+}
+.PortfolioAppSection:hover, .SentimentsAppSection:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+    z-index: 2;
+}
+/* Mobile Apps Section Styling */
 .MobileAppsSection {
     font-family: 'Arial Narrow', Arial, sans-serif;
     color: #000;
@@ -7,6 +15,12 @@
     margin: 2rem 0;
     padding: 2rem 1.5rem;
     box-shadow: 2px 0 8px 0 rgba(0,0,0,0.03);
+    transition: transform 0.4s;
+}
+.MobileAppsSection:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+    z-index: 2;
 }
 .MobileAppsSection h2 {
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -283,7 +297,7 @@ td {
     width: 80vh;
     word-wrap: break-word;
     text-align: left;
-    color: wheat;
+    color: #d6dde4ff;
     transform: scale(1);
     transition: transform 0.4s;
 
@@ -306,7 +320,7 @@ td {
     border-radius: 10px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     transition: transform 0.4s;
-    color: wheat;
+    color: #d6dde4ff;
 }
 
 .ComponentExperience:hover {

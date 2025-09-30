@@ -1,7 +1,7 @@
 
 import React from "react";
 import data from '../src/data/en.json';
-import profilePhoto from './assets/14899.jpg';
+import profilePhoto from './assets/IMG_3942COMP1.jpg';
 
 class IndexPageComponentA extends React.Component {
   constructor(props) {

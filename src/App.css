@@ -121,13 +121,14 @@ body {
     transition: background 0.3s;
 }
 
-#root {
+.root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
     display: flex;
     flex-grow: 1;
+    background: transparent !important;
 }
 
 th,
@@ -278,7 +279,7 @@ td {
     align-self: flex-start;
     font-family: 'Times New Roman', serif;
     z-index: 20;
-    background: #eaf4fb;
+    background: rgba(234, 244, 251, 0.85) !important;
     box-shadow: 2px 0 8px 0 rgba(0,0,0,0.03);
     min-height: 100vh;
 }
@@ -373,7 +374,7 @@ td {
 
 .componentB {
     flex: 1;
-    background: #132335;
+    background: rgba(19, 35, 53, 0.85) !important;
     min-height: 100vh;
 }
 

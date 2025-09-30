@@ -37,7 +37,8 @@ export default function ShaderBackgroundImage() {
         bleedRange: { value: 1.0 },
         colorBleedL: { value: new THREE.Vector4(0.8, 0.0, 0.4, 1.0) },
         colorBleedC: { value: new THREE.Vector4(0.0, 0.5, 0.9, 1.0) },
-        colorBleedR: { value: new THREE.Vector4(0.8, 0.0, 0.4, 1.0) }
+        colorBleedR: { value: new THREE.Vector4(0.8, 0.0, 0.4, 1.0) },
+        mouse: { value: new THREE.Vector2(0.5, 0.5) }
       };
 
       const fragmentShader = `
@@ -60,6 +61,7 @@ export default function ShaderBackgroundImage() {
         uniform vec4 colorBleedL;
         uniform vec4 colorBleedC;
         uniform vec4 colorBleedR;
+        uniform vec2 mouse;
 
         const float tau = 6.28318530718;
 
@@ -111,9 +113,27 @@ export default function ShaderBackgroundImage() {
           vec4 c = texture2D(inputImage, loc);
           c -= rand(vec3(loc.x, loc.y, xTime)) * xTime / (5.0-grainLevel);
 
-          gl_FragColor = c;
+          // Interactive spotlight gradient
+          float dist = distance(loc, mouse);
+          float spotlight = smoothstep(0.3, 0.0, dist); // 0.3 = radius
+          vec4 gradColor = mix(c, vec4(1.0, 0.9, 0.6, 1.0), spotlight * 0.7); // spotlight color
+          gl_FragColor = gradColor;
         }
       `;
+      // Mouse/touch event handler for spotlight
+      const updateMouse = (e) => {
+        let x, y;
+        if (e.touches) {
+          x = e.touches[0].clientX;
+          y = e.touches[0].clientY;
+        } else {
+          x = e.clientX;
+          y = e.clientY;
+        }
+        uniforms.mouse.value.set(x / window.innerWidth, 1 - y / window.innerHeight);
+      };
+      window.addEventListener("mousemove", updateMouse);
+      window.addEventListener("touchmove", updateMouse);
 
       const geometry = new THREE.PlaneGeometry(2, 2);
       const material = new THREE.ShaderMaterial({
@@ -141,6 +161,8 @@ export default function ShaderBackgroundImage() {
       return () => {
         cancelAnimationFrame(frameId);
         window.removeEventListener("resize", handleResize);
+        window.removeEventListener("mousemove", updateMouse);
+        window.removeEventListener("touchmove", updateMouse);
         renderer.dispose();
         mountRef.current.removeChild(renderer.domElement);
       };

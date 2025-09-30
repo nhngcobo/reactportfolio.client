@@ -23,6 +23,7 @@ function App() {
 
     return (
         <>
+            <ShaderBackgroundImage />
             <div className={`root ${theme}`}>
                 <div className="divideComponents">
                     {/* Theme toggle removed */}
@@ -67,7 +68,6 @@ function App() {
                 </div>
             </div>
             <ScrollToTopButton />
-
         </>
     );
 }

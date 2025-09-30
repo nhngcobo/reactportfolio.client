@@ -10,15 +10,11 @@ import summitAgenda from "./assets/agenda.png";
 import summitSpeakers from "./assets/speakers.png";
 import summitSpeakerBio from "./assets/speaker-bio.png";
 import summitMindfulness from "./assets/mindfulness.png";
-import profileImg from "./assets/IMG_3942COMP1.jpg";
 
 const MobileAppsSection = () => {
   return (
     <div className="MobileAppsSection" style={{ marginTop: '2rem' }}>
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.5rem' }}>
-        <img src={profileImg} alt="Profile" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', marginRight: 18, boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }} />
-        <h2 style={{ margin: 0 }}>Mobile Apps</h2>
-      </div>
+      <h2>Mobile Apps</h2>
       <div style={{ marginBottom: '1.5rem', background: '#eaf4fb', borderRadius: '8px', padding: '1rem' }}>
         <h3 style={{ margin: 0 }}>TalentSync</h3>
         <p style={{ margin: '0.5rem 0' }}>

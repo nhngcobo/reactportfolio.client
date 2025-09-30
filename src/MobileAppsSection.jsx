@@ -1,6 +1,10 @@
 
 import React from "react";
 import teamMatchingScreenshot from "./assets/04-team-matching-results.png";
+import tsHome from "./assets/01-home-dashboard.png";
+import tsProposal from "./assets/02-new-project-proposal.png";
+import tsAnalytics from "./assets/05-analytics-dashboard.png";
+import tsTalentPool from "./assets/06-talent-pool.png";
 import summitHome from "./assets/home.png";
 import summitAgenda from "./assets/agenda.png";
 import summitSpeakers from "./assets/speakers.png";
@@ -24,12 +28,16 @@ const MobileAppsSection = () => {
           <li>Cross-platform: React Native (Expo) for iOS, Android, and web</li>
         </ul>
         <p style={{ fontStyle: 'italic', color: '#555' }}>Platforms: Android, iOS, Web</p>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12 }}>
-          <img src={teamMatchingScreenshot} alt="TalentSync App Screenshot" style={{ width: '100%', maxWidth: 180, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
-          <a href="https://github.com/nhngcobo/PAApp.git" target="_blank" rel="noopener noreferrer" style={{ color: '#213547', fontWeight: 'bold', wordBreak: 'break-all', fontSize: 14 }}>
-            https://github.com/nhngcobo/PAApp.git
-          </a>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 12, marginBottom: 8 }}>
+          <img src={tsHome} alt="TalentSync Home Dashboard" style={{ width: '100%', maxWidth: 120, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+          <img src={tsProposal} alt="TalentSync New Project Proposal" style={{ width: '100%', maxWidth: 120, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+          <img src={teamMatchingScreenshot} alt="TalentSync Team Matching Results" style={{ width: '100%', maxWidth: 120, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+          <img src={tsAnalytics} alt="TalentSync Analytics Dashboard" style={{ width: '100%', maxWidth: 120, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+          <img src={tsTalentPool} alt="TalentSync Talent Pool" style={{ width: '100%', maxWidth: 120, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
         </div>
+        <a href="https://github.com/nhngcobo/PAApp.git" target="_blank" rel="noopener noreferrer" style={{ color: '#213547', fontWeight: 'bold', wordBreak: 'break-all', fontSize: 14, display: 'inline-block', marginTop: 4 }}>
+          https://github.com/nhngcobo/PAApp.git
+        </a>
       </div>
 
       {/* AD-D Summit App */}

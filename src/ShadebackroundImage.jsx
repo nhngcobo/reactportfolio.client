@@ -1,5 +1,7 @@
+
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
+import profileImg from "./assets/14899.jpg";
 
 export default function ShaderBackgroundImage() {
   const mountRef = useRef(null);
@@ -11,8 +13,8 @@ export default function ShaderBackgroundImage() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    const loader = new THREE.TextureLoader();
-    loader.load("/src/assets/14899.jpg", (texture) => {
+  const loader = new THREE.TextureLoader();
+  loader.load(profileImg, (texture) => {
       texture.minFilter = THREE.LinearFilter;
       texture.magFilter = THREE.LinearFilter;
       texture.wrapS = THREE.RepeatWrapping;
